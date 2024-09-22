@@ -1,6 +1,7 @@
 use easy::{
     enums::{calculate_area, Shape},
     options::find_first_a,
+    packages::get_current_time,
     results::read_file,
     structs::{Rect, User},
     vlf::{fib, get_str_len, is_even},
@@ -50,4 +51,6 @@ pub fn easy() {
         Ok(val) => println!("{}", val),
         Err(err) => println!("Failed to read the file: {}", err),
     }
+
+    get_current_time();
 }
